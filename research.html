@@ -3,81 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Resources</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Research</title>
+    <style>
+        #researchContent {
+            display: none; /* 처음에는 숨김 */
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+        button {
+            padding: 8px 12px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function toggleResearch() {
+            var content = document.getElementById("researchContent");
+            if (content.style.display === "none") {
+                content.style.display = "block"; // 보이기
+            } else {
+                content.style.display = "none"; // 숨기기
+            }
+        }
+    </script>
 </head>
 <body>
-    <header>
-        <h1>Realistic Research: University, Web-based, and Local Resources</h1>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="data.html">Data</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <button onclick="toggleResearch()">Research</button>
+    <div id="researchContent">
+        <h2>Research Information</h2>
+        <p>## Realistic Research: University, Web-based, and Local Resources
 
-    <main>
-        <section>
-            <h2>Getting Started</h2>
-            <p>This lesson is meant for students who must begin research in their first semester of the TCID, IA, or the Ph.D. in Technical Communication program who want to develop, improve, or refresh their research skills. Additionally, this lesson is designed to give students strategies that will help them research more efficiently.</p>
+            ### Overview
+            This lesson is designed for students in their first semester of the TCID, IA, or Ph.D. in Technical Communication programs who want to develop, improve, or refresh their research skills. It provides strategies for researching efficiently and effectively.
+            
+            ### Content Areas
+            This lesson covers the following key research areas:
+            
+            - **Getting Started**: Learn how to access IIT library services and navigate the library website.
+            - **Research Timelines**: Develop a timeline to manage research deadlines effectively.
+            - **Requesting Resources**: Understand how to request articles and books from other libraries.
+            - **Local Libraries**: Learn how and when to utilize local library resources.
+            - **Finding Resources on the Web**: Explore web-based research tools and their best uses.
+            
+            After reviewing these sections, you will complete a short quiz to reinforce key strategies presented in the lesson.
+            
+            ---
+            
+            ## Getting Started
+            
+            ### Accessing Library Services
+            To use IIT library services, you need an **IIT Hawk Card**, which you can obtain via the [Hawk Card Homepage](#). Your Hawk Card allows you to check out physical materials from Galvin Library and request interlibrary loans. However, you can still access online journals and use search functions without it.
+            
+            ### Using myIIT to Access the Library Website
+            The best way to access library resources is through **myIIT**:
+            
+            1. Log in to myIIT.
+            2. Click on **Library Resources**.
+            
+            This method provides a proxy server connection, enabling seamless access to most resources.
+            
+            ![Library Services icon leading to search website](research2.jpg)
+            
+            Once on the library website, use the left-hand navigation bar to explore research databases such as **Academic Search Premier (EBSCO)**.
+            
+            ---
+            
+            ## Research Timelines
+            
+            ### Formulating a Timeline
+            A realistic research timeline ensures you have enough time to acquire, read, and integrate resources before your deadline. Consider this formula:
+            
+            **Time to obtain resource + Time to read + Time to integrate < Time before deadline**
+            
+            #### Key Considerations
+            - **Time to obtain**: How long will it take to access the resource?
+            - **Time to read**: Can you realistically read the material in time?
+            - **Time to integrate**: Do you have time to incorporate it into your project?
+            - **Remaining time before the deadline**: Is it feasible to adjust your research approach?
+            
+            #### Example: Bridgette's Research Timeline
+            Bridgette, a graduate student, creates a timeline in **Google Calendar** to track resource requests, reading schedules, and writing deadlines. This allows her to stay on track while researching technical communication history.
+            
+            ---
+            
+            ## Requesting Resources
+            
+            ### Requesting Articles
+            If an article isn’t available as a **.pdf**, use the **Get Article** link:
+            
+            ![Example of requesting an article](research4_image1.jpg)
+            
+            You may be redirected to **MyILL**, where you can request the article. 
+            
+            ![MyILL request page](research4_image2.jpg)
+            
+            To use **MyILL**, register separately from **myIIT**. You will be notified by email when your article is ready for download.
+            
+            ### Requesting Books from Other Libraries
+            Follow these steps:
+            1. Search the **IIT library system**.
+            2. If unavailable, check **I-Share**.
+            3. If still unavailable, search **WorldCat**.
+            
+            #### Keeping Track of Resources
+            - Maintain a **Google Doc** or **flash drive** list of all books and articles you plan to use.
+            - Preview books using **Google Books** or **book reviews** before requesting them.
+            
+            ---
+            
+            ## Local Libraries
+            
+            ### I-Share Libraries
+            Many I-Share libraries allow you to check out books with an **IIT ID card**. The **Daley Library at UIC** has an open-stacks policy and extensive resources.
+            
+            Before visiting:
+            - Verify the **library’s location and hours**.
+            - Confirm **public access policies**.
+            
+            ### Public Libraries
+            The **Chicago Public Library (CPL)** system offers additional resources, including textbooks. If you don’t live in Chicago, you can still visit CPL locations to read and copy materials.
+            
+            #### Example: Obtaining a Resource from a Local Library
+            Bridgette needs the book *English for Engineers* but has only **ten days** left before her deadline. Since waiting for an interlibrary loan is too risky, she checks **UIC’s library website**, confirms availability, and retrieves the book in person.
+            
+            ---
+            
+            ## Finding Resources on the Web
+            
+            ### Key Online Research Tools
+            - **Google Scholar**: Tracks citations and related research.
+            - **Google Books**: Provides previews and full-text access to some books.
+            - **Web of Science**: Similar to Google Scholar but focused on scientific publications.
+            
+            #### Example: Using Web Resources
+            Bridgette questions the arguments in an article she’s using. She searches its title on **Google Scholar** and finds **62 citations**, allowing her to evaluate how other researchers have referenced the work.
+            
+            ---
+            
+            ## Final Thoughts
+            By starting early and utilizing various research methods, you can efficiently gather and integrate high-quality resources into your work. Now, take the **quiz** to reinforce your understanding of these research strategies.
+            </p>
+    </div>
 
-            <h3>Accessing Library Services</h3>
-            <p>If you are a newly admitted student and have not obtained an IIT Hawk Card, details for doing so can be found at the Hawk Card Homepage. You will need your Hawk Card number to access some library services.</p>
-            <p>Even without a Hawk Card, you can still access online journals and search through the library website. The Hawk Card is needed only to check out materials in person or request materials via interlibrary loan.</p>
-
-            <h3>Using myIIT to Access the Library Website</h3>
-            <p>Login to myIIT and select "Library Resources" to get started. This allows you to access library resources more efficiently without re-entering login details.</p>
-        </section>
-
-        <section>
-            <h2>Research Timelines</h2>
-            <p>Formulating a timeline is essential when planning your research. Consider the following formula:</p>
-            <p><strong>Time to obtain resource + Time to read resource + Time to integrate resource into your project < Remaining time before deadline</strong></p>
-
-            <h3>Case Study: Example of a Research Timeline</h3>
-            <p>Bridgette, a graduate student in the Tech Comm program, creates a research timeline for her project on technical communication between the beginning of the 20th century and World War II. After finding some articles, she decides whether it's worth requesting them based on her timeline.</p>
-
-            <p>She records her research goals on Google Calendar to stay organized. By doing so, she makes sure she has enough time to obtain resources, read them, and incorporate the information into her project.</p>
-        </section>
-
-        <section>
-            <h2>Requesting Resources</h2>
-            <h3>Requesting Articles</h3>
-            <p>Some articles may not be available for direct download. In this case, use your MyILL account to request the article from another library.</p>
-
-            <h3>Requesting Books</h3>
-            <p>Start by searching the IIT library system for books. If not found, try I-Share or WorldCat. You can request books from other libraries via MyILL or directly if available in I-Share.</p>
-        </section>
-
-        <section>
-            <h2>Local Libraries</h2>
-            <h3>I-Share Libraries</h3>
-            <p>Local I-Share libraries, like UIC’s Daley Library, allow you to access books directly. Check the rules and hours before visiting, as some libraries may have restricted access to non-students.</p>
-
-            <h3>Public Libraries</h3>
-            <p>The Chicago Public Library (CPL) system is another valuable resource. While non-Chicago residents can visit and read or copy books, only Chicago residents can check them out.</p>
-        </section>
-
-        <section>
-            <h2>Using Web Resources for Research</h2>
-            <p>Web-based tools like Google Scholar, Google Books, and Web of Science are useful for finding scholarly articles, books, and citations.</p>
-
-            <h3>Case Study: Using Web Resources</h3>
-            <p>Bridgette uses Google Scholar to explore references to an article she’s using in her research. This allows her to find additional examples and expand her paper.</p>
-        </section>
-        
-        <section>
-            <h2>Conclusion</h2>
-            <p>Starting early with your research gives you the time needed to use both traditional library resources and web-based tools to their fullest. Organize your research timeline and be realistic about the resources you can obtain to complete your project on time.</p>
-        </section>
-
-        <footer>
-            <p>© 2025 Research Resources. All Rights Reserved.</p>
-        </footer>
-    </main>
 </body>
 </html>
+
