@@ -12,20 +12,49 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="module1.html">Module 1: Getting Started</a></li>
-                <li><a href="module2.html">Module 2: Research Paper Structure</a></li>
-                <li><a href="template.html">Template for New Module</a></li>
+                <li><a href="#" onclick="showContent('research')">Research</a></li>
+                <li><a href="#" onclick="showContent('data')">Data</a></li>
+                <li><a href="#" onclick="showAlert()">Topic</a></li>
+                <li><a href="#" onclick="showAlert()">References</a></li>
+                <li><a href="#" onclick="showAlert()">Style</a></li>
+                <li><a href="#" onclick="showAlert()">Layout</a></li>
+                <li><a href="#" onclick="showAlert()">Modality</a></li>
+                <li><a href="#" onclick="showAlert()">Professionalization</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
+        <section id="home">
             <h2>Welcome to the Research Paper Toolbox</h2>
-            <p>Explore the modules below to learn how to effectively structure your research paper.</p>
+            <p>Constructing a research paper is an integral part of being a graduate student in the Information Architecture, Technical Communication, and Information Design programs at IIT.</p>
+        </section>
+
+        <section id="research" style="display:none;">
+            <h2>Realistic Research: University, Web-based, and Local Resources</h2>
+            <p>This lesson is meant for students who want to develop, improve, or refresh their research skills.</p>
+            <h3>Content Areas</h3>
             <ul>
-                <li><a href="module1.html">Module 1: Getting Started</a></li>
-                <li><a href="module2.html">Module 2: Research Paper Structure</a></li>
+                <li>Learn how to access IIT library services</li>
+                <li>Formulate a research timeline</li>
+                <li>Request articles and books from other libraries</li>
+                <li>Access local libraries</li>
+                <li>Find resources on the web</li>
+            </ul>
+        </section>
+
+        <section id="data" style="display:none;">
+            <h2>How to Organize and Analyze Research Data</h2>
+            <h3>Required Tools:</h3>
+            <ul>
+                <li>Microsoft Excel</li>
+                <li>PASW (formerly SPSS) statistics software</li>
+            </ul>
+            <h3>Lesson Objectives</h3>
+            <ul>
+                <li>Format raw research data in an Excel spreadsheet</li>
+                <li>Run basic descriptive statistics in Excel</li>
+                <li>Prepare the document for statistical analysis</li>
             </ul>
         </section>
     </main>
@@ -33,5 +62,19 @@
     <footer>
         <p>&copy; 2025 Research Paper Toolbox | All Rights Reserved</p>
     </footer>
+
+    <script>
+        function showContent(sectionId) {
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('research').style.display = 'none';
+            document.getElementById('data').style.display = 'none';
+            
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        function showAlert() {
+            alert("This section is not available yet. Please check back later.");
+        }
+    </script>
 </body>
 </html>
