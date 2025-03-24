@@ -3,78 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Paper Toolbox</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Research Resources</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Research Paper Toolbox</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#" onclick="showContent('research')">Research</a></li>
-                <li><a href="#" onclick="showContent('data')">Data</a></li>
-                <li><a href="#" onclick="showAlert()">Topic</a></li>
-                <li><a href="#" onclick="showAlert()">References</a></li>
-                <li><a href="#" onclick="showAlert()">Style</a></li>
-                <li><a href="#" onclick="showAlert()">Layout</a></li>
-                <li><a href="#" onclick="showAlert()">Modality</a></li>
-                <li><a href="#" onclick="showAlert()">Professionalization</a></li>
-            </ul>
-        </nav>
+        <h1>Realistic Research: University, Web-based, and Local Resources</h1>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section id="home">
-            <h2>Welcome to the Research Paper Toolbox</h2>
-            <p>Constructing a research paper is an integral part of being a graduate student in the Information Architecture, Technical Communication, and Information Design programs at IIT.</p>
+        <section>
+            <h2>Getting Started</h2>
+            <p>This lesson is meant for students who must begin research in their first semester of the TCID, IA, or the Ph.D. in Technical Communication program who want to develop, improve, or refresh their research skills. Additionally, this lesson is designed to give students strategies that will help them research more efficiently.</p>
+
+            <h3>Accessing Library Services</h3>
+            <p>If you are a newly admitted student and have not obtained an IIT Hawk Card, details for doing so can be found at the Hawk Card Homepage. You will need your Hawk Card number to access some library services.</p>
+            <p>Even without a Hawk Card, you can still access online journals and search through the library website. The Hawk Card is needed only to check out materials in person or request materials via interlibrary loan.</p>
+
+            <h3>Using myIIT to Access the Library Website</h3>
+            <p>Login to myIIT and select "Library Resources" to get started. This allows you to access library resources more efficiently without re-entering login details.</p>
         </section>
 
-        <section id="research" style="display:none;">
-            <h2>Realistic Research: University, Web-based, and Local Resources</h2>
-            <p>This lesson is meant for students who want to develop, improve, or refresh their research skills.</p>
-            <h3>Content Areas</h3>
-            <ul>
-                <li>Learn how to access IIT library services</li>
-                <li>Formulate a research timeline</li>
-                <li>Request articles and books from other libraries</li>
-                <li>Access local libraries</li>
-                <li>Find resources on the web</li>
-            </ul>
+        <section>
+            <h2>Research Timelines</h2>
+            <p>Formulating a timeline is essential when planning your research. Consider the following formula:</p>
+            <p><strong>Time to obtain resource + Time to read resource + Time to integrate resource into your project < Remaining time before deadline</strong></p>
+
+            <h3>Case Study: Example of a Research Timeline</h3>
+            <p>Bridgette, a graduate student in the Tech Comm program, creates a research timeline for her project on technical communication between the beginning of the 20th century and World War II. After finding some articles, she decides whether it's worth requesting them based on her timeline.</p>
+
+            <p>She records her research goals on Google Calendar to stay organized. By doing so, she makes sure she has enough time to obtain resources, read them, and incorporate the information into her project.</p>
         </section>
 
-        <section id="data" style="display:none;">
-            <h2>How to Organize and Analyze Research Data</h2>
-            <h3>Required Tools:</h3>
-            <ul>
-                <li>Microsoft Excel</li>
-                <li>PASW (formerly SPSS) statistics software</li>
-            </ul>
-            <h3>Lesson Objectives</h3>
-            <ul>
-                <li>Format raw research data in an Excel spreadsheet</li>
-                <li>Run basic descriptive statistics in Excel</li>
-                <li>Prepare the document for statistical analysis</li>
-            </ul>
+        <section>
+            <h2>Requesting Resources</h2>
+            <h3>Requesting Articles</h3>
+            <p>Some articles may not be available for direct download. In this case, use your MyILL account to request the article from another library.</p>
+
+            <h3>Requesting Books</h3>
+            <p>Start by searching the IIT library system for books. If not found, try I-Share or WorldCat. You can request books from other libraries via MyILL or directly if available in I-Share.</p>
         </section>
+
+        <section>
+            <h2>Local Libraries</h2>
+            <h3>I-Share Libraries</h3>
+            <p>Local I-Share libraries, like UIC’s Daley Library, allow you to access books directly. Check the rules and hours before visiting, as some libraries may have restricted access to non-students.</p>
+
+            <h3>Public Libraries</h3>
+            <p>The Chicago Public Library (CPL) system is another valuable resource. While non-Chicago residents can visit and read or copy books, only Chicago residents can check them out.</p>
+        </section>
+
+        <section>
+            <h2>Using Web Resources for Research</h2>
+            <p>Web-based tools like Google Scholar, Google Books, and Web of Science are useful for finding scholarly articles, books, and citations.</p>
+
+            <h3>Case Study: Using Web Resources</h3>
+            <p>Bridgette uses Google Scholar to explore references to an article she’s using in her research. This allows her to find additional examples and expand her paper.</p>
+        </section>
+        
+        <section>
+            <h2>Conclusion</h2>
+            <p>Starting early with your research gives you the time needed to use both traditional library resources and web-based tools to their fullest. Organize your research timeline and be realistic about the resources you can obtain to complete your project on time.</p>
+        </section>
+
+        <footer>
+            <p>© 2025 Research Resources. All Rights Reserved.</p>
+        </footer>
     </main>
-
-    <footer>
-        <p>&copy; 2025 Research Paper Toolbox | All Rights Reserved</p>
-    </footer>
-
-    <script>
-        function showContent(sectionId) {
-            document.getElementById('home').style.display = 'none';
-            document.getElementById('research').style.display = 'none';
-            document.getElementById('data').style.display = 'none';
-            
-            document.getElementById(sectionId).style.display = 'block';
-        }
-
-        function showAlert() {
-            alert("This section is not available yet. Please check back later.");
-        }
-    </script>
 </body>
 </html>
+
