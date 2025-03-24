@@ -59,6 +59,16 @@ h2 {
     color: #333;
 }
 
+.locked a {
+    color: grey;
+    pointer-events: none;
+}
+
+.locked-message {
+    color: red;
+    font-weight: bold;
+}
+
 footer {
     text-align: center;
     padding: 10px;
@@ -72,3 +82,4 @@ footer {
 footer p {
     margin: 0;
 }
+
