@@ -4,92 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research Paper Toolbox</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
         }
-        header {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #2c3e50;
-        }
-        p {
-            line-height: 1.6;
-        }
-        .nav {
+        body {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 20px;
-        }
-        .nav a {
-            text-decoration: none;
-            background-color: #3498db;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
             color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
+        }
+        nav {
+            width: 250px;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            height: 100%;
+        }
+        nav h1 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            display: block;
+            padding: 10px 20px;
+            width: 100%;
+            text-align: center;
+            border-radius: 8px;
             transition: 0.3s;
         }
-        .nav a:hover {
-            background-color: #2980b9;
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        .container {
+            margin-left: 270px;
+            padding: 40px;
+            max-width: 900px;
+        }
+        .intro {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+            cursor: pointer;
+            text-align: center;
+        }
+        .card:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
 
-    <header>Research Paper Toolbox</header>
+    <nav>
+        <h1>📚 Research Toolbox</h1>
+        <a href="home.html">🏠 Home</a>
+        <a href="topic.html">🔍 Topic</a>
+        <a href="research.html">📖 Research</a>
+        <a href="data.html">📊 Data</a>
+        <a href="references.html">📑 References</a>
+        <a href="style.html">✍ Style</a>
+        <a href="layout.html">🖍 Layout</a>
+        <a href="modality.html">🎥 Modality</a>
+        <a href="professionalization.html">💼 Professionalization</a>
+    </nav>
 
     <div class="container">
-        <h2>Welcome to the Research Paper Toolbox</h2>
-        <p>
-            Constructing a research paper is an integral part of being a graduate student in the 
-            Information Architecture, Technical Communication and Information Design, and Technical Communication programs at IIT.
-        </p>
+        <div class="intro">
+            <h2>Welcome to the Research Paper Toolbox</h2>
+            <p>Explore essential resources and techniques for crafting strong research papers. 
+                Whether you're a beginner or an experienced researcher, this toolbox has something for you.</p>
+        </div>
 
-        <p>
-            There is no right or wrong way to put a paper together, but there are a wealth of tools available to make the 
-            process efficient and manageable. This course will guide you through the basic steps of writing a research paper 
-            and introduce tools to help you along the way.
-        </p>
-
-        <p>
-            Whether you're new to research papers or just need a refresher, you can explore different lessons below. 
-            Click on a module to begin.
-        </p>
-
-        <div class="nav">
-            <a href="home.html">Home</a>
-            <a href="topic.html">Topic</a>
-            <a href="research.html">Research</a>
-            <a href="data.html">Data</a>
-            <a href="references.html">References</a>
-            <a href="style.html">Style</a>
-            <a href="layout.html">Layout</a>
-            <a href="modality.html">Modality</a>
-            <a href="professionalization.html">Professionalization</a>
+        <div class="cards">
+            <div class="card">
+                <h3>🔍 Choosing a Topic</h3>
+                <p>Learn how to define a compelling research question.</p>
+            </div>
+            <div class="card">
+                <h3>📖 Effective Research</h3>
+                <p>Discover databases, search strategies, and citation management tools.</p>
+            </div>
+            <div class="card">
+                <h3>📊 Using Data</h3>
+                <p>Find out how to collect and analyze data for your paper.</p>
+            </div>
+            <div class="card">
+                <h3>📑 Citing Sources</h3>
+                <p>Ensure proper referencing with APA, MLA, and Chicago styles.</p>
+            </div>
         </div>
     </div>
 
 </body>
 </html>
+
 
 
