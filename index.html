@@ -4,123 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research Paper Toolbox</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- CSS 연결 -->
     <style>
-        * {
+        /* 기본 스타일 추가 */
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
         }
-        body {
-            display: flex;
-            min-height: 100vh;
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
+        header {
+            background-color: #004466;
             color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 24px;
         }
-        nav {
-            width: 250px;
-            background: rgba(0, 0, 0, 0.2);
-            padding: 20px;
+        nav ul {
+            list-style: none;
+            padding: 0;
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: fixed;
-            height: 100%;
+            justify-content: center;
+            background-color: #0088cc;
+            margin: 0;
         }
-        nav h1 {
-            font-size: 22px;
-            margin-bottom: 20px;
+        nav ul li {
+            margin: 10px;
         }
-        nav a {
+        nav ul li a {
             text-decoration: none;
             color: white;
-            font-weight: 500;
-            display: block;
-            padding: 10px 20px;
-            width: 100%;
-            text-align: center;
-            border-radius: 8px;
-            transition: 0.3s;
+            font-weight: bold;
         }
-        nav a:hover {
-            background: rgba(255, 255, 255, 0.3);
+        nav ul li a:hover {
+            text-decoration: underline;
         }
-        .container {
-            margin-left: 270px;
-            padding: 40px;
-            max-width: 900px;
-        }
-        .intro {
-            background: rgba(255, 255, 255, 0.2);
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
             padding: 20px;
             border-radius: 10px;
-            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
             text-align: center;
-        }
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .card {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 20px;
-            border-radius: 10px;
-            transition: 0.3s;
-            cursor: pointer;
-            text-align: center;
-        }
-        .card:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: scale(1.05);
+            padding: 10px;
+            background-color: #004466;
+            color: white;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
+    <header>Research Paper Toolbox</header>
 
     <nav>
-        <h1>📚 Research Toolbox</h1>
-        <a href="home.html">🏠 Home</a>
-        <a href="topic.html">🔍 Topic</a>
-        <a href="research.html">📖 Research</a>
-        <a href="data.html">📊 Data</a>
-        <a href="references.html">📑 References</a>
-        <a href="style.html">✍ Style</a>
-        <a href="layout.html">🖍 Layout</a>
-        <a href="modality.html">🎥 Modality</a>
-        <a href="professionalization.html">💼 Professionalization</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="topic.html">Topic</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="data.html">Data</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="style.html">Style</a></li>
+            <li><a href="layout.html">Layout</a></li>
+            <li><a href="modality.html">Modality</a></li>
+            <li><a href="professionalization.html">Professionalization</a></li>
+        </ul>
     </nav>
 
-    <div class="container">
-        <div class="intro">
-            <h2>Welcome to the Research Paper Toolbox</h2>
-            <p>Explore essential resources and techniques for crafting strong research papers. 
-                Whether you're a beginner or an experienced researcher, this toolbox has something for you.</p>
-        </div>
+    <main>
+        <h2>About Research Paper Toolbox</h2>
+        <p>
+            Constructing a research paper is an integral part of being a graduate student in the 
+            Information Architecture, Technical Communication, and Information Design programs at IIT.
+        </p>
+        <p>
+            There is no right or wrong way to put a paper together, but there are a wealth of tools 
+            available to make the process efficient and manageable.
+        </p>
+        <p>
+            If you are new to writing research papers, this course will guide you through each step. 
+            Even if you are experienced, you can refresh your knowledge with one or more lessons.
+        </p>
 
-        <div class="cards">
-            <div class="card">
-                <h3>🔍 Choosing a Topic</h3>
-                <p>Learn how to define a compelling research question.</p>
-            </div>
-            <div class="card">
-                <h3>📖 Effective Research</h3>
-                <p>Discover databases, search strategies, and citation management tools.</p>
-            </div>
-            <div class="card">
-                <h3>📊 Using Data</h3>
-                <p>Find out how to collect and analyze data for your paper.</p>
-            </div>
-            <div class="card">
-                <h3>📑 Citing Sources</h3>
-                <p>Ensure proper referencing with APA, MLA, and Chicago styles.</p>
-            </div>
-        </div>
-    </div>
+        <h3>Available Modules</h3>
+        <ul>
+            <li><a href="index.html">Home*</a></li>
+            <li><a href="topic.html">Topic</a></li>
+            <li><a href="research.html">Research*</a></li>
+            <li><a href="data.html">Data*</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="style.html">Style</a></li>
+            <li><a href="layout.html">Layout</a></li>
+            <li><a href="modality.html">Modality</a></li>
+            <li><a href="professionalization.html">Professionalization</a></li>
+        </ul>
 
+        <p><i>*These modules are not available yet. You cannot access these pages.</i></p>
+    </main>
+
+    <footer>
+        © 2025 Research Paper Toolbox. All rights reserved.
+    </footer>
 </body>
 </html>
-
 
 
