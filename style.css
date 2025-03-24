@@ -9,15 +9,22 @@ header {
     background-color: #333;
     color: white;
     padding: 20px;
+    text-align: center;
 }
 
 header h1 {
     margin: 0;
 }
 
+nav {
+    background-color: #444;
+    padding: 10px 0;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -28,14 +35,28 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 main {
     padding: 20px;
+    background-color: white;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 section, aside {
     margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
 }
 
 footer {
@@ -43,4 +64,11 @@ footer {
     padding: 10px;
     background-color: #333;
     color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
 }
