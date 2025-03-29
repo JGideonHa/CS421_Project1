@@ -5,16 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        function toggleResearch() {
-            var content = document.getElementById("researchContent");
-            if (content.style.display === "none") {
-                content.style.display = "block"; // 보이기
-            } else {
-                content.style.display = "none"; // 숨기기
-            }
-        }
-    </script>
 </head>
 <body>
 
@@ -30,12 +20,15 @@
     </header>
 
     <main>
+        <!-- 버튼 클릭 시 연구 내용 보이기/숨기기 -->
         <button onclick="toggleResearch()">Research</button>
+
+        <!-- 숨겨진 내용 -->
         <div id="researchContent" style="display: none;">
             <h2>Realistic Research: University, Web-based, and Local Resources</h2>
             <h3>Overview</h3>
             <p>This lesson is designed for students in their first semester of the TCID, IA, or Ph.D. in Technical Communication programs who want to develop, improve, or refresh their research skills. It provides strategies for researching efficiently and effectively.</p>
-            
+
             <h3>Content Areas</h3>
             <ul>
                 <li>Getting Started: Learn how to access IIT library services and navigate the library website.</li>
@@ -44,7 +37,7 @@
                 <li>Local Libraries: Learn how and when to utilize local library resources.</li>
                 <li>Finding Resources on the Web: Explore web-based research tools and their best uses.</li>
             </ul>
-            
+
             <h3>Getting Started</h3>
             <h4>Accessing Library Services</h4>
             <p>To use IIT library services, you need an <strong>IIT Hawk Card</strong>.</p>
@@ -67,6 +60,18 @@
     <footer>
         <p>© 2025 Research Project. All rights reserved.</p>
     </footer>
+
+    <script>
+        function toggleResearch() {
+            var content = document.getElementById("researchContent");
+            console.log(content.style.display); // 디버깅용
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block"; // 보이기
+            } else {
+                content.style.display = "none"; // 숨기기
+            }
+        }
+    </script>
 
 </body>
 </html>
